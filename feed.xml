@@ -6,9 +6,70 @@
 </description>
     <link>http://xtext.org/Xtext/</link>
     <atom:link href="http://xtext.org/Xtext/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Feb 2023 16:30:59 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Feb 2023 16:30:59 +0000</lastBuildDate>
+    <pubDate>Mon, 27 Feb 2023 14:17:46 +0000</pubDate>
+    <lastBuildDate>Mon, 27 Feb 2023 14:17:46 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Xtext 2.30.0 Release Notes</title>
+        <description>&lt;p&gt;Xtext 2.30.0 is a maintenance release.&lt;/p&gt;
+
+&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext&quot;&gt;Call to Action: Secure the future maintenance of Xtext&lt;/h2&gt;
+
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;EMF is now at 2.29 and later.&lt;/li&gt;
+  &lt;li&gt;Jetty 9.4.50&lt;/li&gt;
+  &lt;li&gt;We pinned the versions in manifests to match the ones in the minimal target platform for Eclipse 2022-03.&lt;/li&gt;
+  &lt;li&gt;Reload4j/log4j is now at 1.2.24&lt;/li&gt;
+  &lt;li&gt;LSP4J was updated to 0.20.0 and GSON to 2.10.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;changes--enhancements&quot;&gt;Changes / Enhancements&lt;/h2&gt;
+
+&lt;p&gt;The minimal version for Eclipse Platform and JDT in manifests were bumped so that they correspond to our minimal tested target platform of Eclipse 2022-03.&lt;br /&gt;
+The performance of (overloaded) Xbase expressions was enhanced.&lt;/p&gt;
+
+&lt;h2 id=&quot;deprecation&quot;&gt;Deprecation&lt;/h2&gt;
+
+&lt;p&gt;We marked Deprecated API more explicit and also added some &lt;code&gt;forRemoval&lt;/code&gt; to them.&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release to &lt;a href=&quot;https://github.com/eclipse/xtext#repositories&quot;&gt;all repositories&lt;/a&gt; except &lt;a href=&quot;https://github.com/eclipse/xtext-xtend&quot;&gt;xtext-xtend&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;Christian Dietrich (itemis)&lt;br /&gt;
+Lorenzo Bettini (Università degli Studi di Firenze)&lt;br /&gt;
+Sebastian Zarnekow (independent)&lt;br /&gt;
+Elie Richa (AdaCore)&lt;/p&gt;
+
+&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
+
+&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+milestone%3ARelease_2.30+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Apr+milestone%3ARelease_2.30+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.30&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.30&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.30&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+        <link>http://xtext.org/Xtext/releasenotes/2023/02/27/version-2-30-0.html</link>
+        <guid isPermaLink="true">http://xtext.org/Xtext/releasenotes/2023/02/27/version-2-30-0.html</guid>
+        
+        
+        <category>releasenotes</category>
+        
+      </item>
     
       <item>
         <title>Xtext 2.29.0 Release Notes</title>
@@ -788,93 +849,6 @@ The list is not yet complete, so feel free to contact us if you are also interes
         <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
         <link>http://xtext.org/Xtext/releasenotes/2020/03/03/version-2-21-0.html</link>
         <guid isPermaLink="true">http://xtext.org/Xtext/releasenotes/2020/03/03/version-2-21-0.html</guid>
-        
-        
-        <category>releasenotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Xtext 2.20.0 Release Notes</title>
-        <description>&lt;p&gt;Xtext 2.20.0 is mainly a maintenance release.&lt;/p&gt;
-
-&lt;h2 id=&quot;eclipse-integration&quot;&gt;Eclipse Integration&lt;/h2&gt;
-
-&lt;h3 id=&quot;egit-minimal-version&quot;&gt;EGit minimal version&lt;/h3&gt;
-
-&lt;p&gt;Xtext requires to use EGit 4.1 or newer now. We have removed a workaround that prevented an endless build loop caused by EGit &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=474003&quot;&gt;Bug#474003&lt;/a&gt;. Since we expect that no clients are still using Xtext &amp;gt;= 2.20 together with the ancient EGit version, we felt safe to finally remove this workaround.&lt;/p&gt;
-
-&lt;h3 id=&quot;new-project-wizard--new-file-wizard-improvements&quot;&gt;New Project Wizard / New File Wizard improvements&lt;/h3&gt;
-
-&lt;p&gt;The &lt;code&gt;New Project Wizard&lt;/code&gt; / &lt;code&gt;New File Wizard&lt;/code&gt; generator fragments have been extended by the &lt;code&gt;generateToolbarButton&lt;/code&gt; option. Setting this option to &lt;code&gt;true&lt;/code&gt; adds new project wizard / new file wizard buttons to the toolbar. Furthermore, the New Project Wizard templates provide an API to&lt;br /&gt;
-register images that can be used in the template descriptions. All these wizard improvements are demonstrated by the Statemachine example shipped by the Xtext framework.&lt;/p&gt;
-
-&lt;h2 id=&quot;xtext-web&quot;&gt;Xtext-Web&lt;/h2&gt;
-
-&lt;p&gt;The &lt;code&gt;Xtext-Web Entities Example&lt;/code&gt; provides improved validator and formatter capabilities, such as validating the entity, property and operation names, validating the uniquness of the property/operation definitions as well as properly formatting the defined packages, entities, properties and operations elements.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The Eclipse Modeling Workflow Engine (MWE2) was updated to version 2.11.1.&lt;/li&gt;
-  &lt;li&gt;LSP4J is now on version 0.8.1.&lt;/li&gt;
-  &lt;li&gt;Maven Tycho was updated to version 1.5.1.&lt;/li&gt;
-  &lt;li&gt;Gradle to version 5.6.x (Should also work with Gradle 6.0.x which we will ship with Xtext 2.21).&lt;/li&gt;
-  &lt;li&gt;grgit Gradle Plugin 4.0.0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;xtend&quot;&gt;Xtend&lt;/h2&gt;
-
-&lt;p&gt;A word on Xtend. Back in 2013 Xtend was the “Java 10 of today” even before Java 8 was out. Meanwhile Java Release cadence has speeded up and many of Xtends features can be achieved with pure Java, too. There is still some areas where Xtend is particularly advanced like Code generation, Unit tests and lambda heavy APIs like JvmModelInferrer and Formatter. For other tasks there is no need to use Xtend. Also the resources we have no longer allow us to keep the head start against Java. And learning Xtend still is a burden for new Xtext users. To reflect this changed situation we have decided to make Java the default in the wizard again (except e.g. the Generator and a few other APIs). You can still decide if you want Java or Xtend in the workflow.&lt;/p&gt;
-
-&lt;h2 id=&quot;deprecations&quot;&gt;Deprecations&lt;/h2&gt;
-
-&lt;h3 id=&quot;old-generator&quot;&gt;Old Generator&lt;/h3&gt;
-
-&lt;p&gt;With Xtext 2.9 we changed the way Xtext languages are generated to a new generator infrastructure/workflow (&lt;code&gt;org.eclipse.xtext.xtext.generator&lt;/code&gt;). Until now we still kept the support for the old (Xpand based) workflows and generator (&lt;code&gt;org.eclipse.xtext.generator&lt;/code&gt;). We also allowed to use old generator fragments in new workflows through &lt;code&gt;org.eclipse.xtext.generator.adapter.FragmentAdapter&lt;/code&gt;. As we want to stop using old Xpand in Xtext we will drop this support in a future Xtext release. We strongly recommend you to migrate to the new workflow and to get rid of the usages of &lt;code&gt;FragmentAdapter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;xtend1-based-ixtext2ecorepostprocessor&quot;&gt;Xtend(1) based IXtext2EcorePostProcessor&lt;/h3&gt;
-
-&lt;p&gt;Xtext has basically two methods to work with metamodels. The first on is to infer the metamodel from the Grammar. The second one is to maintain it manually and import it in Xtext. In the past we had actually a third option too: To hook into the inference with a &lt;code&gt;IXtext2EcorePostProcessor&lt;/code&gt; written in old Xtend(1). We plan to drop this feature in the future and recommend you to switch to a manually maintained metamodel.&lt;/p&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-
-&lt;p&gt;The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release to &lt;a href=&quot;https://github.com/eclipse/xtext#repositories&quot;&gt;all repositories&lt;/a&gt; except &lt;a href=&quot;https://github.com/eclipse/xtext-xtend&quot;&gt;xtext-xtend&lt;/a&gt;):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Christian Dietrich (itemis)&lt;/li&gt;
-  &lt;li&gt;Karsten Thoms (itemis)&lt;/li&gt;
-  &lt;li&gt;Sebastian Zarnekow (independent)&lt;/li&gt;
-  &lt;li&gt;Tamas Miklossy (itemis)&lt;/li&gt;
-  &lt;li&gt;D. Gabriel (Bachmann) &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Jan Köhnlein (TypeFox)&lt;/li&gt;
-  &lt;li&gt;Arne Deutsch (itemis)&lt;/li&gt;
-  &lt;li&gt;Mathias Rieder &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Elena Rogleva &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Mark Christiaens (Sigasi)&lt;/li&gt;
-  &lt;li&gt;Simeon Andreev (Advantest) &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Stéphane Galland (Université de Technologie de Belfort)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
-
-&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. Almost 60 issues and 320 pull requests have made it into this release. For further details please refer to the following lists:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+milestone%3ARelease_2.20+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Apr+milestone%3ARelease_2.20+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.20&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.20&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.20&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-        <link>http://xtext.org/Xtext/releasenotes/2019/12/03/version-2-20-0.html</link>
-        <guid isPermaLink="true">http://xtext.org/Xtext/releasenotes/2019/12/03/version-2-20-0.html</guid>
         
         
         <category>releasenotes</category>

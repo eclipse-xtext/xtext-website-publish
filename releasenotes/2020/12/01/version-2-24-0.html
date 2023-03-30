@@ -144,21 +144,21 @@
 
 <h2 id="java-based-api-for-new-formatter">Java based API for new Formatter</h2>
 
-<p>With Xtext 2.24 we introduce a new preliminary <a href="https://github.com/eclipse/xtext-core/blob/master/org.eclipse.xtext/src/org/eclipse/xtext/formatting2/AbstractJavaFormatter.java">API</a> that allows you to implement the Formatter(2) in Java instead of Xtend. With Java 11 and later, you can use local variable type inference and the equivalent of commonly used extensions are available via delegate methods. We encourage you to give it a try and to give feedback.</p>
+<p>With Xtext 2.24 we introduce a new preliminary <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext/src/org/eclipse/xtext/formatting2/AbstractJavaFormatter.java">API</a> that allows you to implement the Formatter(2) in Java instead of Xtend. With Java 11 and later, you can use local variable type inference and the equivalent of commonly used extensions are available via delegate methods. We encourage you to give it a try and to give feedback.</p>
 
 <h2 id="xtext-generator">Xtext Generator</h2>
 
-<p>The (new) <a href="https://github.com/eclipse/xtext-core/tree/master/org.eclipse.xtext.xtext.generator/src/org/eclipse/xtext/xtext/generator">Xtext Generator</a> is now API.</p>
+<p>The (new) <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xtext.generator/src/org/eclipse/xtext/xtext/generator">Xtext Generator</a> is now API.</p>
 
 <h2 id="language-server-protocol">Language Server Protocol</h2>
 
-<p>The Xtext Language Server Protocol (LSP) implementation has now an experimental API for Quickfix code actions (have a look at the <a href="https://github.com/eclipse/xtext-core/blob/master/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/editor/quickfix/IQuickFixProvider.java"><code>IQuickFixProvider</code></a> interface and <a href="https://github.com/eclipse/xtext-core/blob/master/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/codeActions/QuickFixCodeActionService.java"><code>QuickFixCodeActionService</code></a> class).</p>
+<p>The Xtext Language Server Protocol (LSP) implementation has now an experimental API for Quickfix code actions (have a look at the <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/editor/quickfix/IQuickFixProvider.java"><code>IQuickFixProvider</code></a> interface and <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/codeActions/QuickFixCodeActionService.java"><code>QuickFixCodeActionService</code></a> class).</p>
 
 <h2 id="eclipse-integration">Eclipse Integration</h2>
 
 <ul>
   <li>We did a number of performance improvments for editing <code>.xtext</code> files.</li>
-  <li>We fixed a flaw in <a href="https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.builder/src/org/eclipse/xtext/builder/ParallelBuilderParticipant.java"><code>ParallelBuilderParticipant</code></a> that may have lead to missing generated files.</li>
+  <li>We fixed a flaw in <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.builder/src/org/eclipse/xtext/builder/ParallelBuilderParticipant.java"><code>ParallelBuilderParticipant</code></a> that may have lead to missing generated files.</li>
   <li>The Validate Action now should behave correctly with Fast, Normal and Expensive Checks.</li>
 </ul>
 

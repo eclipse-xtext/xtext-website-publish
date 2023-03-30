@@ -152,7 +152,7 @@
 
 <h3 id="quickfix-testing-api">Quickfix testing API</h3>
 
-<p>A new base class <a href="https://github.com/eclipse/xtext-eclipse/blob/master/org.eclipse.xtext.ui.testing/src/org/eclipse/xtext/ui/testing/AbstractQuickfixTest.java"><code>AbstractQuickfixTest</code></a> allows the definition of test cases for quickfixes. Quickfixes can be tested by using the method</p>
+<p>A new base class <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ui.testing/src/org/eclipse/xtext/ui/testing/AbstractQuickfixTest.java"><code>AbstractQuickfixTest</code></a> allows the definition of test cases for quickfixes. Quickfixes can be tested by using the method</p>
 
 <pre><code class="language-java">public void testQuickfixesOn(CharSequence model, String issueCode, Quickfix... quickfixes)
 </code></pre>
@@ -225,7 +225,7 @@
 
 <h3 id="hierarchical-document-symbols">Hierarchical Document Symbols</h3>
 
-<p>Xtext now supports the <em>hierarchical document symbols</em> as a response to the <code>textDocument/documentSymbol</code> request (introduced in <a href="https://microsoft.github.io/language-server-protocol/specification#version_3_10_0">LSP 3.10.0</a>). For this support a new interface <a href="https://github.com/eclipse/xtext-core/blob/9e46f302bb7bfd68b61f1a05f1c9bb5d830b7fa1/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/symbol/IDocumentSymbolService.xtend"><code>IDocumentSymbolService</code></a> has been added to the bundle <code>org.eclipse.xtext.ide</code>. By default it binds to a no-op implementation. Hierarchical symbols can be activated by binding the interface to the <a href="https://github.com/eclipse/xtext-core/blob/9e46f302bb7bfd68b61f1a05f1c9bb5d830b7fa1/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/symbol/HierarchicalDocumentSymbolService.xtend"><code>HierarchicalDocumentSymbolService</code></a> implementation.</p>
+<p>Xtext now supports the <em>hierarchical document symbols</em> as a response to the <code>textDocument/documentSymbol</code> request (introduced in <a href="https://microsoft.github.io/language-server-protocol/specification#version_3_10_0">LSP 3.10.0</a>). For this support a new interface <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/symbol/IDocumentSymbolService.xtend"><code>IDocumentSymbolService</code></a> has been added to the bundle <code>org.eclipse.xtext.ide</code>. By default it binds to a no-op implementation. Hierarchical symbols can be activated by binding the interface to the <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ide/src/org/eclipse/xtext/ide/server/symbol/HierarchicalDocumentSymbolService.xtend"><code>HierarchicalDocumentSymbolService</code></a> implementation.</p>
 
 <h3 id="configurable-server-exit-behavior">Configurable Server Exit Behavior</h3>
 

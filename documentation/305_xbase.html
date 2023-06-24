@@ -448,7 +448,7 @@ Property:
 public Object evaluate(XExpression expression, Object thisElement) {
   IEvaluationContext evaluationContext = contextProvider.get();
   // provide initial context and implicit variables
-  evaluationContext.newValue(XbaseScopeProvider.THIS, thisElement);
+  evaluationContext.newValue(IFeatureNames.THIS, thisElement);
   
   IEvaluationResult result = xbaseInterpreter.evaluate(expression,
     evaluationContext, CancelIndicator.NullImpl);
@@ -1231,7 +1231,7 @@ bd *= 12bd // equivalent to bd = bd * 12bd
 
 <h5 id="xbase-expressions-if-type-inference">Typing</h5>
 
-<p>The type of an <code>if</code> expression is calculated from the types <code>T1</code> and <code>T2</code> of the two expressions <code>e1</code> and <code>e2</code>. It uses the rules defined in the <a href="#xbase-types-common-super-type">common super types</a> section, if an explicit <code>else</code> branch is given. If it is ommitted, the type of the <code>if</code> expression is the type <code>T</code> of the expression <code>e</code> of the form <code>if (b) e</code>.</p>
+<p>The type of an <code>if</code> expression is calculated from the types <code>T1</code> and <code>T2</code> of the two expressions <code>e1</code> and <code>e2</code>. It uses the rules defined in the <a href="#xbase-types-common-super-type">common super types</a> section, if an explicit <code>else</code> branch is given. If it is omitted, the type of the <code>if</code> expression is the type <code>T</code> of the expression <code>e</code> of the form <code>if (b) e</code>.</p>
 
 <h5 id="examples-9">Examples</h5>
 

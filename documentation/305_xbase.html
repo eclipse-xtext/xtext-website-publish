@@ -13,7 +13,7 @@
 	<!--  styles -->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
 	<!-- Le fav and touch icons -->
@@ -78,7 +78,7 @@
 		  }
 		},
 		"content": {
-		"href": "http://www.eclipse.org/legal/privacy.php"
+		"href": "https://www.eclipse.org/legal/privacy.php"
 		}
 	})});
 	</script>
@@ -111,7 +111,7 @@
                 <li><a href="https://www.typefox.io/language-engineering/" target="_blank">TypeFox</a></li>
               </ul>
             </li>
-            <li ><a href="http://xtend-lang.org">Xtend</a></li>
+            <li ><a href="https://eclipse.dev/Xtext/xtend">Xtend</a></li>
           </ul>
           <!--div class="nav pull-right">
             <li ><a><iframe src="https://ghbtns.com/github-btn.html?user=eclipse&repo=xtext&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
@@ -130,7 +130,7 @@
   <script>
     function startSearch(event) {
         if (event.keyCode == 13) {
-            var q = 'site:eclipse.org/Xtext/documentation+' + event.target.value;
+            var q = 'site:eclipse.dev/Xtext/documentation+' + event.target.value;
             window.open('https://www.google.com/search?q=' + q, "_self");
         }
     }
@@ -516,7 +516,7 @@ public Object evaluate(XExpression expression, Object thisElement) {
 
 <h4 id="xbase-syntax-comments">Comments</h4>
 
-<p>Xbase comes with two different kinds of comments: Single-line comments and multi-line comments. The syntax is the same as the one known from Java (see <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.7">§ 3.7 Comments</a>).</p>
+<p>Xbase comes with two different kinds of comments: Single-line comments and multi-line comments. The syntax is the same as the one known from Java (see <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.7">§ 3.7 Comments</a>).</p>
 
 <h4 id="xbase-syntax-whitespace">White Space</h4>
 
@@ -579,7 +579,7 @@ public Object evaluate(XExpression expression, Object thisElement) {
 
 <h4 id="xbase-types-parameterized-type-reference">Parameterized Type References</h4>
 
-<p>The general syntax for type references allows to take any number of type arguments. The semantics as well as the syntax is almost the same as in Java, so please refer to the third edition of the <a href="http://docs.oracle.com/javase/specs/jls/se7/html/index.html">Java Language Specification</a>.</p>
+<p>The general syntax for type references allows to take any number of type arguments. The semantics as well as the syntax is almost the same as in Java, so please refer to the third edition of the <a href="https://docs.oracle.com/javase/specs/jls/se7/html/index.html">Java Language Specification</a>.</p>
 
 <p>The only difference is that in Xbase a type reference can also be a function type. In the following the full syntax of type references is shown, including function types and type arguments.</p>
 
@@ -624,7 +624,7 @@ public Object evaluate(XExpression expression, Object thisElement) {
 
 <p>Type conformance rules are used in order to find out whether some expression can be used in a certain situation. For instance when assigning a value to a variable, the type of the right hand expression needs to conform to the type of the variable.</p>
 
-<p>As Xbase implements the type system of Java it also fully supports the conformance rules defined in the <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html">Java Language Specification</a>.</p>
+<p>As Xbase implements the type system of Java it also fully supports the conformance rules defined in the <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html">Java Language Specification</a>.</p>
 
 <p>Some types in Xbase can be used synonymously even if they do not conform to each other in Java. An example for this are arrays and lists or function types with compatible function parameters. Objects of these types are implicitly converted by Xbase on demand.</p>
 
@@ -648,7 +648,7 @@ public Object evaluate(XExpression expression, Object thisElement) {
 
 <p>String literals can either use <code>'single quotes'</code> or <code>"double quotes"</code> as their enclosing characters. When using double quotes all literals allowed by Java string literals are supported. In addition new line characters are allowed, i.e. in Xbase string literals can span multiple lines. When using single quotes the only difference is that single quotes within the literal have to be escaped while double quotes do not.</p>
 
-<p>See <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.5">§ 3.10.5 String Literals</a></p>
+<p>See <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.5">§ 3.10.5 String Literals</a></p>
 
 <p>In contrast to Java, equal string literals within the same class do not necessarily refer to the same instance at runtime, especially in the interpreted mode.</p>
 
@@ -729,7 +729,7 @@ jumps over the lazy dog."
 
 <p>Type cast behave the same as in Java, but have a more readable syntax. Type casts bind stronger than any other operator but weaker than feature calls.</p>
 
-<p>The conformance rules for casts are defined in the <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html#jls-5.5">Java Language Specification</a>.</p>
+<p>The conformance rules for casts are defined in the <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html#jls-5.5">Java Language Specification</a>.</p>
 
 <h5 id="examples-5">Examples</h5>
 
@@ -1487,7 +1487,7 @@ switch x {
 
 <h4 id="xbase-expressions-try-catch">Try, Catch, Finally</h4>
 
-<p>The try-catch-finally expression is used to handle exceptional situations. You are not forced to declare checked exceptions. If you don’t catch checked exceptions, they are thrown in a way the compiler does not complain about a missing throws clause, using the sneaky-throw technique introduced by <a href="http://projectlombok.org/features/SneakyThrows.html">Lombok</a>.</p>
+<p>The try-catch-finally expression is used to handle exceptional situations. You are not forced to declare checked exceptions. If you don’t catch checked exceptions, they are thrown in a way the compiler does not complain about a missing throws clause, using the sneaky-throw technique introduced by <a href="https://projectlombok.org/features/SneakyThrows.html">Lombok</a>.</p>
 
 <pre><code class="language-xbase">  try {
     throw new RuntimeException()
@@ -1500,7 +1500,7 @@ switch x {
 
 <h4 id="xbase-expressions-synchronized">Synchronized</h4>
 
-<p>The synchonized expression does the same as it does in Java (see <a href="http://docs.oracle.com/javase/specs/jls/se7/html/jls-14.html#jls-14.19">Java Language Specification</a>). The only difference is that in Xbase it is an expression and can therefore be used at more places.</p>
+<p>The synchonized expression does the same as it does in Java (see <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-14.html#jls-14.19">Java Language Specification</a>). The only difference is that in Xbase it is an expression and can therefore be used at more places.</p>
 
 <pre><code class="language-xtend">  synchronized(lock) {
     println("Hello")
@@ -1522,7 +1522,7 @@ switch x {
 
 <p>These extension methods are declared in separate Java classes. There are various ways how extension methods can be added. In the simplest case the language designer predefines which extension methods are available. Language users cannot add additional library functions using this mechanism.</p>
 
-<p>Another alternative is to have them looked up by a certain naming convention. Also for more general languages it is possible to let users add extension methods using imports or similar mechanisms. This approach can be seen in the language <a href="https://www.eclipse.org/xtend/">Xtend</a>, where extension methods are lexically imported through static imports or dependency injection.</p>
+<p>Another alternative is to have them looked up by a certain naming convention. Also for more general languages it is possible to let users add extension methods using imports or similar mechanisms. This approach can be seen in the language <a href="https://eclipse.dev/Xtext/xtend/">Xtend</a>, where extension methods are lexically imported through static imports or dependency injection.</p>
 
 <p>The precedence of extension methods is always lower than real member methods, i.e. you cannot override member features. Also the extension methods are not invoked polymorphic. If you have two extension methods on the scope (<code>foo(Object)</code> and <code>foo(String)</code>) the expression <code>(foo as Object).foo</code> would bind and invoke <code>foo(Object)</code>.</p>
 
@@ -1600,15 +1600,15 @@ HeadNode head(HtmlNode parent, Function1&lt;HeadNode, Void&gt; initializer)
           <div class="span6">
             <h3 class="footer-links-header">Quick Links</h3>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-              <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-              <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-              <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+              <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+              <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+              <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+              <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
             </ul>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-              <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-              <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+              <li><a href="https://www.eclipse.org">Eclipse Home</a></li>
+              <li><a href="https://marketplace.eclipse.org/">Market Place</a></li>
+              <li><a href="https://www.planeteclipse.org/">Eclipse Planet</a></li>
               <li><a href="https://www.eclipse.org/forums/index.php/f/27/">Xtext Forum</a></li>
             </ul>
             <br/><br/>
@@ -1652,7 +1652,7 @@ HeadNode head(HtmlNode parent, Function1&lt;HeadNode, Void&gt; initializer)
       ga.type = 'text/javascript';
       ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-          : 'http://www')
+          : 'https://www')
           + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);

@@ -12,7 +12,7 @@
 	<!--  styles -->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
 	<!-- Le fav and touch icons -->
@@ -77,7 +77,7 @@
 		  }
 		},
 		"content": {
-		"href": "http://www.eclipse.org/legal/privacy.php"
+		"href": "https://www.eclipse.org/legal/privacy.php"
 		}
 	})});
 	</script>
@@ -101,11 +101,11 @@
             <li ><a href="/Xtext/xtend/download.html">Download</a></li>
             <li ><a href="/Xtext/xtend/documentation/index.html">Documentation</a></li>
             <li ><a href="/Xtext/xtend/community.html">Community</a></li>
-            <li ><a href="http://xtext.org">Xtext</a></li>
-            <li ><a href="http://www.eclipse.org">Eclipse.org</a></li>
+            <li ><a href="https://eclipse.dev/Xtext">Xtext</a></li>
+            <li ><a href="https://www.eclipse.org">Eclipse.org</a></li>
           </ul>
               <!--div class="btn-group pull-right">
-                <div class="g-plusone" data-href="http://www.xtend-lang.org"></div>
+                <div class="g-plusone" data-href="https://eclipse.dev/Xtext/xtend"></div>
               </div-->
         </div>
         <!--/.nav-collapse -->
@@ -119,7 +119,7 @@
   <script>
     function startSearch(event) {
         if (event.keyCode == 13) {
-            var q = 'site:eclipse.org/xtend/documentation+' + event.target.value;
+            var q = 'site:eclipse.dev/Xtext/xtend/documentation+' + event.target.value;
             window.open('https://www.google.com/search?q=' + q, "_self");
         }
     }
@@ -310,7 +310,7 @@ import static org.junit.Assert.*
 
 <p>Xtend does not force you to catch or declare checked exceptions. Nevertheless, you can still declare the exceptions thrown in a method’s body using the <code>throws</code> clause as in Java.</p>
 
-<p>If you do not declare checked exceptions in your method but they are possibly thrown in your code, the compiler will throw the checked exception silently (using the sneaky-throw technique introduced by <a href="http://projectlombok.org/features/SneakyThrows.html">Lombok</a>).</p>
+<p>If you do not declare checked exceptions in your method but they are possibly thrown in your code, the compiler will throw the checked exception silently (using the sneaky-throw technique introduced by <a href="https://projectlombok.org/features/SneakyThrows.html">Lombok</a>).</p>
 
 <pre><code class="language-xtend">/*
  * throws an Exception
@@ -358,7 +358,7 @@ def void sneakyThrowException() {
 }
 </code></pre>
 
-<p>Type parameter bounds and constraints are supported and share the same syntax and semantics as defined in the <a href="http://docs.oracle.com/javase/specs/jls/se6/html/classes.html#8.4.4">the Java Language Specification</a>.</p>
+<p>Type parameter bounds and constraints are supported and share the same syntax and semantics as defined in the <a href="https://docs.oracle.com/javase/specs/jls/se6/html/classes.html#8.4.4">the Java Language Specification</a>.</p>
 
 <h3 id="operator-declaration">Operator Declarations</h3>
 
@@ -582,7 +582,7 @@ def copy(Person p) {
 
 <h2 id="annotations">Annotations</h2>
 
-<p>Annotations are available on classes, fields, methods and parameters. They are prefixed with the <code>@</code> character and accept a number of key-value pairs or a default value for the annotation property named <code>value</code>. Annotation values that expect arrays can handle single values, too. Value arrays are enclosed in array literals <code>#['first', 'second']</code>. The semantics for annotations are exactly like defined in the <a href="http://docs.oracle.com/javase/specs/jls/se6/html/interfaces.html#9.7">Java Language Specification</a>. Here is an example:</p>
+<p>Annotations are available on classes, fields, methods and parameters. They are prefixed with the <code>@</code> character and accept a number of key-value pairs or a default value for the annotation property named <code>value</code>. Annotation values that expect arrays can handle single values, too. Value arrays are enclosed in array literals <code>#['first', 'second']</code>. The semantics for annotations are exactly like defined in the <a href="https://docs.oracle.com/javase/specs/jls/se6/html/interfaces.html#9.7">Java Language Specification</a>. Here is an example:</p>
 
 <pre><code class="language-xtend">@TypeAnnotation("some value")
 class MyClass {
@@ -715,7 +715,7 @@ person.delete  // calls ep.delete(person)
 }
 </code></pre>
 
-<p>Since version 8 of the Java language, interfaces are allowed to contain non-abstract instance methods, called <a href="http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html">default methods</a>, as well as static methods. This is also supported in Xtend (since 2.8): if Java 8 is selected as target language version, interfaces are allowed to declare methods with bodies like in the following example.</p>
+<p>Since version 8 of the Java language, interfaces are allowed to contain non-abstract instance methods, called <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html">default methods</a>, as well as static methods. This is also supported in Xtend (since 2.8): if Java 8 is selected as target language version, interfaces are allowed to declare methods with bodies like in the following example.</p>
 
 <pre><code class="language-xtend">interface MyInterface {
   def doStuff() {
@@ -844,15 +844,15 @@ annotation MyAnnotation {
         <div class="span6">
           <h3 class="footer-links-header">Quick Links</h3>
           <ul class="footer-links clearfix">
-            <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-            <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-            <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-            <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+            <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+            <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+            <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+            <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
           </ul>
           <ul class="footer-links clearfix">
-            <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-            <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-            <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+            <li><a href="https://www.eclipse.org">Eclipse Home</a></li>
+            <li><a href="https://marketplace.eclipse.org/">Market Place</a></li>
+            <li><a href="https://www.planeteclipse.org/">Eclipse Planet</a></li>
             <li><a href="https://www.eclipse.org/forums/index.php/f/27/">Xtext Forum</a></li>
           </ul>
         </div>
@@ -870,7 +870,7 @@ annotation MyAnnotation {
     </div>
   </div>
   <a href="#" class="scrollup fadeOutRight animated" style="display: none;">ScrollUp</a>
-  <a href="http://dryicons.com/">Icons by http://dryicons.com</a>
+  <a href="https://dryicons.com/">Icons by https://dryicons.com</a>
   <!-- Le javascript
       ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
@@ -895,7 +895,7 @@ annotation MyAnnotation {
       ga.type = 'text/javascript';
       ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-          : 'http://www')
+          : 'https://www')
           + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);

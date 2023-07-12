@@ -13,7 +13,7 @@
 	<!--  styles -->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
 	<!-- Le fav and touch icons -->
@@ -78,7 +78,7 @@
 		  }
 		},
 		"content": {
-		"href": "http://www.eclipse.org/legal/privacy.php"
+		"href": "https://www.eclipse.org/legal/privacy.php"
 		}
 	})});
 	</script>
@@ -111,7 +111,7 @@
                 <li><a href="https://www.typefox.io/language-engineering/" target="_blank">TypeFox</a></li>
               </ul>
             </li>
-            <li ><a href="http://xtend-lang.org">Xtend</a></li>
+            <li ><a href="https://eclipse.dev/Xtext/xtend">Xtend</a></li>
           </ul>
           <!--div class="nav pull-right">
             <li ><a><iframe src="https://ghbtns.com/github-btn.html?user=eclipse&repo=xtext&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
@@ -130,7 +130,7 @@
   <script>
     function startSearch(event) {
         if (event.keyCode == 13) {
-            var q = 'site:eclipse.org/Xtext/documentation+' + event.target.value;
+            var q = 'site:eclipse.dev/Xtext/documentation+' + event.target.value;
             window.open('https://www.google.com/search?q=' + q, "_self");
         }
     }
@@ -169,7 +169,7 @@
           <div class="span8 doc-contents">
             <h1 id="jvm-domain-model">Five simple steps to your JVM language</h1>
 
-<p>In this tutorial we will basically implement the <a href="https://www.eclipse.org/Xtext/documentation/103_domainmodelnextsteps.html">domain model language</a> again, but this time we will make use of the special JVM support shipped with Xtext. This kind of language is really a sweet spot for DSLs, so feel free to use this as a blueprint and add your project specific features later on.</p>
+<p>In this tutorial we will basically implement the <a href="https://www.eclipse.dev/Xtext/documentation/103_domainmodelnextsteps.html">domain model language</a> again, but this time we will make use of the special JVM support shipped with Xtext. This kind of language is really a sweet spot for DSLs, so feel free to use this as a blueprint and add your project specific features later on.</p>
 
 <p>The revised domain model language supports expressions and cross-links to Java types. It is directly translated to Java source code. The syntax should look very familiar. Here is an example:</p>
 
@@ -471,7 +471,7 @@ class DomainmodelJvmModelInferrer extends AbstractModelInferrer {
         boolean isPrelinkingPhase) {
 </code></pre>
 
-    <p>Using the dispatch keyword makes sure that the method is called for instances of type <em>Entity</em> only. Have a look at the Xtend documentation on <a href="http://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#polymorphic-dispatch">polymorphic dispatch</a> to understand Xtend’s dispatch functions. Extending <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/AbstractModelInferrer.java">AbstractModelInferrer</a> makes sure we don’t have to walk the syntax model on our own.</p>
+    <p>Using the dispatch keyword makes sure that the method is called for instances of type <em>Entity</em> only. Have a look at the Xtend documentation on <a href="https://www.eclipse.dev/Xtext/xtend/documentation/202_xtend_classes_members.html#polymorphic-dispatch">polymorphic dispatch</a> to understand Xtend’s dispatch functions. Extending <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/AbstractModelInferrer.java">AbstractModelInferrer</a> makes sure we don’t have to walk the syntax model on our own.</p>
   </li>
   <li>
     <pre><code class="language-xtend">acceptor.accept(element.toClass(element.fullyQualifiedName)) [
@@ -486,7 +486,7 @@ class DomainmodelJvmModelInferrer extends AbstractModelInferrer {
     <pre><code class="language-xtend">documentation = element.documentation
 </code></pre>
 
-    <p>Here we assign some JavaDoc to the newly created element. The assignment is translated to an invocation of the method <em><a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/JvmTypesBuilder.java">JvmTypesBuilder</a>.setDocumentation(<a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.common.types/emf-gen/org/eclipse/xtext/common/types/JvmIdentifiableElement.java">JvmIdentifiableElement</a>, String)</em>, and <code>element.documentation</code> is in fact calling the extension method <em><a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/JvmTypesBuilder.java">JvmTypesBuilder</a>.getDocumentation(<a href="https://git.eclipse.org/r/plugins/gitiles/emf/org.eclipse.emf/+/refs/tags/R2_20_0/plugins/org.eclipse.emf.ecore/src/org/eclipse/emf/ecore/EObject.java">EObject</a>)</em>. Such extension methods are explained in detail in the <a href="https://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#extension-methods">Xtend documentation</a>.</p>
+    <p>Here we assign some JavaDoc to the newly created element. The assignment is translated to an invocation of the method <em><a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/JvmTypesBuilder.java">JvmTypesBuilder</a>.setDocumentation(<a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.common.types/emf-gen/org/eclipse/xtext/common/types/JvmIdentifiableElement.java">JvmIdentifiableElement</a>, String)</em>, and <code>element.documentation</code> is in fact calling the extension method <em><a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/jvmmodel/JvmTypesBuilder.java">JvmTypesBuilder</a>.getDocumentation(<a href="https://git.eclipse.org/r/plugins/gitiles/emf/org.eclipse.emf/+/refs/tags/R2_20_0/plugins/org.eclipse.emf.ecore/src/org/eclipse/emf/ecore/EObject.java">EObject</a>)</em>. Such extension methods are explained in detail in the <a href="https://www.eclipse.dev/Xtext/xtend/documentation/202_xtend_classes_members.html#extension-methods">Xtend documentation</a>.</p>
   </li>
   <li>
     <pre><code class="language-xtend">if (element.superType !== null)
@@ -565,15 +565,15 @@ class DomainmodelJvmModelInferrer extends AbstractModelInferrer {
           <div class="span6">
             <h3 class="footer-links-header">Quick Links</h3>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-              <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-              <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-              <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+              <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+              <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+              <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+              <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
             </ul>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-              <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-              <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+              <li><a href="https://www.eclipse.org">Eclipse Home</a></li>
+              <li><a href="https://marketplace.eclipse.org/">Market Place</a></li>
+              <li><a href="https://www.planeteclipse.org/">Eclipse Planet</a></li>
               <li><a href="https://www.eclipse.org/forums/index.php/f/27/">Xtext Forum</a></li>
             </ul>
             <br/><br/>
@@ -617,7 +617,7 @@ class DomainmodelJvmModelInferrer extends AbstractModelInferrer {
       ga.type = 'text/javascript';
       ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-          : 'http://www')
+          : 'https://www')
           + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);

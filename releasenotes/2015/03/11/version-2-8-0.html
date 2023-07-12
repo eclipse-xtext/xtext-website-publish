@@ -13,7 +13,7 @@
 	<!--  styles -->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
 	<!-- Le fav and touch icons -->
@@ -78,7 +78,7 @@
 		  }
 		},
 		"content": {
-		"href": "http://www.eclipse.org/legal/privacy.php"
+		"href": "https://www.eclipse.org/legal/privacy.php"
 		}
 	})});
 	</script>
@@ -111,7 +111,7 @@
                 <li><a href="https://www.typefox.io/language-engineering/" target="_blank">TypeFox</a></li>
               </ul>
             </li>
-            <li ><a href="http://xtend-lang.org">Xtend</a></li>
+            <li ><a href="https://eclipse.dev/Xtext/xtend">Xtend</a></li>
           </ul>
           <!--div class="nav pull-right">
             <li ><a><iframe src="https://ghbtns.com/github-btn.html?user=eclipse&repo=xtext&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
@@ -241,15 +241,15 @@ Workflow {
 
 <h3 id="java-7">Java 7</h3>
 
-<p>Xbase expressions like <code>switch (obj) { ... }</code> where <code>obj</code> is of type <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> are translated to Java <code>switch</code> statements (see <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/strings-switch.html">Strings in switch Statements</a>).</p>
+<p>Xbase expressions like <code>switch (obj) { ... }</code> where <code>obj</code> is of type <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> are translated to Java <code>switch</code> statements (see <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/strings-switch.html">Strings in switch Statements</a>).</p>
 
-<p>In Xbase you can write number literals in the form <code>2_147_483_647</code> to enhance their readability. This is also <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/underscores-literals.html">supported by Java 7</a>. When the Xbase compiler is set to at least Java 7, underscores in number literals are retained in the generated code.</p>
+<p>In Xbase you can write number literals in the form <code>2_147_483_647</code> to enhance their readability. This is also <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/underscores-literals.html">supported by Java 7</a>. When the Xbase compiler is set to at least Java 7, underscores in number literals are retained in the generated code.</p>
 
 <h3 id="java-8">Java 8</h3>
 
-<p><a href="/Xtext/documentation/305_xbase.html#xbase-expressions-lambda">Xbase lambda expressions</a> like <code>[String s | s.toLowerCase]</code> are translated to <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Java 8 lambda expressions</a>, e.g. <code>(String s) -&gt; return s.toLowerCase();</code>. More details on this translation are discussed in <a href="http://spoenemann.blogspot.de/2015/02/xtend-for-java-8.html">this blog post</a>.</p>
+<p><a href="/Xtext/documentation/305_xbase.html#xbase-expressions-lambda">Xbase lambda expressions</a> like <code>[String s | s.toLowerCase]</code> are translated to <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Java 8 lambda expressions</a>, e.g. <code>(String s) -&gt; return s.toLowerCase();</code>. More details on this translation are discussed in <a href="https://spoenemann.blogspot.de/2015/02/xtend-for-java-8.html">this blog post</a>.</p>
 
-<p>Note that independent of which Java version is chosen for the generated code, Xbase works perfectly with the <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/lambda_api_jdk8.html">lambda-optimized Java 8 API</a> because Xbase lambdas are fully compatible with Java 8 lambdas.</p>
+<p>Note that independent of which Java version is chosen for the generated code, Xbase works perfectly with the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/lambda_api_jdk8.html">lambda-optimized Java 8 API</a> because Xbase lambdas are fully compatible with Java 8 lambdas.</p>
 
 <h2 id="more-compiler-options-xbase">More Compiler Options (Xbase)</h2>
 
@@ -293,7 +293,7 @@ Workflow {
 <p>The new version features a Java-to-Xtend converter. Right-click a Java file, package or source folder in the Package Explorer and select <em>Convert to Xtend</em>. You can choose to keep the original Java files (though that will lead to errors due to duplicate types), and you are warned if the Java code contains parts that cannot be translated automatically. These are marked with <code>FIXME</code> comments in the Xtend code. However, the converter is able to convert the majority of Java classes without problems.</p>
 
 <h4 id="more-java-8-support">More Java 8 Support</h4>
-<p>The new version of Xtend of course includes all enhancements of Xbase described above, including support for Java 8. In addition, Xtend allows to define non-abstract methods (static or non-static) in interfaces when Java 8 is chosen as target language level. If such a method is non-static, it is translated to a <a href="http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html">Java 8 default method</a>.</p>
+<p>The new version of Xtend of course includes all enhancements of Xbase described above, including support for Java 8. In addition, Xtend allows to define non-abstract methods (static or non-static) in interfaces when Java 8 is chosen as target language level. If such a method is non-static, it is translated to a <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html">Java 8 default method</a>.</p>
 
 <h2 id="important-changes">Important Changes</h2>
 
@@ -321,15 +321,15 @@ Workflow {
           <div class="span6">
             <h3 class="footer-links-header">Quick Links</h3>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-              <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-              <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-              <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+              <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+              <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+              <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+              <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
             </ul>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-              <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-              <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+              <li><a href="https://www.eclipse.org">Eclipse Home</a></li>
+              <li><a href="https://marketplace.eclipse.org/">Market Place</a></li>
+              <li><a href="https://www.planeteclipse.org/">Eclipse Planet</a></li>
               <li><a href="https://www.eclipse.org/forums/index.php/f/27/">Xtext Forum</a></li>
             </ul>
             <br/><br/>
@@ -373,7 +373,7 @@ Workflow {
       ga.type = 'text/javascript';
       ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-          : 'http://www')
+          : 'https://www')
           + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);

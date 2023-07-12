@@ -13,7 +13,7 @@
 	<!--  styles -->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
 	<!-- Le fav and touch icons -->
@@ -78,7 +78,7 @@
 		  }
 		},
 		"content": {
-		"href": "http://www.eclipse.org/legal/privacy.php"
+		"href": "https://www.eclipse.org/legal/privacy.php"
 		}
 	})});
 	</script>
@@ -111,7 +111,7 @@
                 <li><a href="https://www.typefox.io/language-engineering/" target="_blank">TypeFox</a></li>
               </ul>
             </li>
-            <li ><a href="http://xtend-lang.org">Xtend</a></li>
+            <li ><a href="https://eclipse.dev/Xtext/xtend">Xtend</a></li>
           </ul>
           <!--div class="nav pull-right">
             <li ><a><iframe src="https://ghbtns.com/github-btn.html?user=eclipse&repo=xtext&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></a></li>
@@ -130,7 +130,7 @@
   <script>
     function startSearch(event) {
         if (event.keyCode == 13) {
-            var q = 'site:eclipse.org/Xtext/documentation+' + event.target.value;
+            var q = 'site:eclipse.dev/Xtext/documentation+' + event.target.value;
             window.open('https://www.google.com/search?q=' + q, "_self");
         }
     }
@@ -173,7 +173,7 @@
 
 <h2 id="tutorial-code-generation">Writing a Code Generator With Xtend</h2>
 
-<p>As soon as you generate the Xtext artifacts from the grammar, a code generator stub is put into the runtime project of your language. Let’s dive into <a href="https://www.eclipse.org/xtend/">Xtend</a> and see how you can integrate your own code generator with Eclipse.</p>
+<p>As soon as you generate the Xtext artifacts from the grammar, a code generator stub is put into the runtime project of your language. Let’s dive into <a href="https://www.eclipse.dev/Xtext/xtend/">Xtend</a> and see how you can integrate your own code generator with Eclipse.</p>
 
 <p>In this lesson you will generate Java Beans for entities that are defined in the domainmodel DSL. For each <em>Entity</em>, a Java class is generated and each <em>Feature</em> will lead to a private field in that class including public getters and setters. For the sake of simplicity, we will use fully qualified names all over the generated code.</p>
 
@@ -477,7 +477,7 @@ public void checkFeatureNameIsUnique(Feature feature) {
  }
 </code></pre>
 
-    <p>You can further simplify the code by injecting <code>ParseHelper</code> and <code>ValidationTestHelper</code> as extensions. This feature of Xtend allows to add new methods to a given type without modifying it. You can read more about extension methods in the <a href="https://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#extension-methods">Xtend documentation</a>. You can rewrite the code as follows:</p>
+    <p>You can further simplify the code by injecting <code>ParseHelper</code> and <code>ValidationTestHelper</code> as extensions. This feature of Xtend allows to add new methods to a given type without modifying it. You can read more about extension methods in the <a href="https://www.eclipse.dev/Xtext/xtend/documentation/202_xtend_classes_members.html#extension-methods">Xtend documentation</a>. You can rewrite the code as follows:</p>
 
     <pre><code class="language-xtend"> @Inject extension ParseHelper&lt;Domainmodel&gt;
 
@@ -560,15 +560,15 @@ public void checkFeatureNameIsUnique(Feature feature) {
           <div class="span6">
             <h3 class="footer-links-header">Quick Links</h3>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-              <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-              <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-              <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+              <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+              <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+              <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+              <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
             </ul>
             <ul class="footer-links clearfix">
-              <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-              <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-              <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+              <li><a href="https://www.eclipse.org">Eclipse Home</a></li>
+              <li><a href="https://marketplace.eclipse.org/">Market Place</a></li>
+              <li><a href="https://www.planeteclipse.org/">Eclipse Planet</a></li>
               <li><a href="https://www.eclipse.org/forums/index.php/f/27/">Xtext Forum</a></li>
             </ul>
             <br/><br/>
@@ -612,7 +612,7 @@ public void checkFeatureNameIsUnique(Feature feature) {
       ga.type = 'text/javascript';
       ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-          : 'http://www')
+          : 'https://www')
           + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(ga, s);

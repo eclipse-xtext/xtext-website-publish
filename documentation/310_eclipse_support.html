@@ -299,7 +299,7 @@ public void completeEvent_Code(
 
 <p>For validations written using the <a href="303_runtime_concepts.html#custom-validation">AbstractDeclarativeValidator</a> it is possible to provide corresponding quick fixes in the editor. To be able to implement a quick fix for a given diagnostic (a warning or error) the underlying <em>cause</em> of the diagnostic must be known (i.e. what actual problem does the diagnostic represent), otherwise the fix doesn’t know what needs to be done. As we don’t want to deduce this from the diagnostic’s error message we associate a problem specific <em>code</em> with the diagnostic.</p>
 
-<p>In the following example taken from the <em>DomainmodelValidator</em> the diagnostic’s <em>code</em> is given by the third argument to the <code>warning()</code> method and it is a reference to the static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> field <code>INVALID_TYPE_NAME</code> in the <code>IssueCodes</code> interface.</p>
+<p>In the following example taken from the <em>DomainmodelValidator</em> the diagnostic’s <em>code</em> is given by the third argument to the <code>warning()</code> method and it is a reference to the static <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html">String</a> field <code>INVALID_TYPE_NAME</code> in the <code>IssueCodes</code> interface.</p>
 
 <pre><code class="language-java">warning("Name should start with a capital", 
     DomainmodelPackage.TYPE__NAME, IssueCodes.INVALID_TYPE_NAME, type.getName());
@@ -529,7 +529,7 @@ protected boolean _isLeaf(Feature feature) {
 
 <p>You can also customize the icons and texts for an outline node. By default, Xtext uses the <a href="#label-provider">label provider</a> of your language. If you want the labels to be specific to the outline, you can override the methods <code>_text(modelElement)</code> and <code>_image(modelElement)</code> in your <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/editor/outline/impl/DefaultOutlineTreeProvider.java">DefaultOutlineTreeProvider</a>.</p>
 
-<p>Note that the method <code>_text(modelElement)</code> can return a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> or a <a href="https://help.eclipse.org/luna/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/jface/viewers/StyledString.html">StyledString</a>. The <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/label/StylerFactory.java">StylerFactory</a> can be used to create <a href="https://help.eclipse.org/luna/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/jface/viewers/StyledString.html">StyledStrings</a>, like in the following example:</p>
+<p>Note that the method <code>_text(modelElement)</code> can return a <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html">String</a> or a <a href="https://help.eclipse.org/luna/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/jface/viewers/StyledString.html">StyledString</a>. The <a href="https://github.com/eclipse/xtext/blob/main/org.eclipse.xtext.ui/src/org/eclipse/xtext/ui/label/StylerFactory.java">StylerFactory</a> can be used to create <a href="https://help.eclipse.org/luna/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/jface/viewers/StyledString.html">StyledStrings</a>, like in the following example:</p>
 
 <pre><code class="language-java">@Inject 
 private StylerFactory stylerFactory;

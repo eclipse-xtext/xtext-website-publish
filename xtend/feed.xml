@@ -6,8 +6,8 @@
 </description>
     <link>https://eclipse.dev/Xtext/xtend/</link>
     <atom:link href="https://eclipse.dev/Xtext/xtend/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Aug 2023 16:57:55 +0000</pubDate>
-    <lastBuildDate>Sun, 27 Aug 2023 16:57:55 +0000</lastBuildDate>
+    <pubDate>Sun, 27 Aug 2023 17:39:10 +0000</pubDate>
+    <lastBuildDate>Sun, 27 Aug 2023 17:39:10 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -26,9 +26,7 @@
 
 &lt;p&gt;Cedits&lt;/p&gt;
 
-&lt;p&gt;The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release.&lt;/p&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;see Xtext release notes&lt;/p&gt;
 
 &lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
 

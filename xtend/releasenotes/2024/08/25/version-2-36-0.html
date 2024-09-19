@@ -131,6 +131,10 @@
 
 <h2 id="relevant-changes">Relevant changes</h2>
 
+<ul>
+  <li>The Xtend compiler annotates the synthetic method generated for implementing dispatching for Xtend <code>dispatch</code> methods with the new annotation <code>@XbaseGenerated</code>; this way, code coverage tools like JaCoCo will ignore such Java methods when collecting code coverage. This is now the default behavior of the compiler but can be disabled with the corresponding option.</li>
+</ul>
+
 <h2 id="credits">Credits</h2>
 
 <p>See Xtext release notes.</p>

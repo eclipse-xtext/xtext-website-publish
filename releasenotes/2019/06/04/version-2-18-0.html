@@ -159,7 +159,7 @@
 
 <h3 id="fixed-potential-deadlock-on-startup">Fixed Potential Deadlock on Startup</h3>
 
-<p>A deadlock may occur on startup of Eclipse. The builder infrastructure has been improved to avoid locking on loading its stored state. (<a href="https://github.com/eclipse/xtext/issues/1460">#1460</a>)</p>
+<p>A deadlock may occur on startup of Eclipse. The builder infrastructure has been improved to avoid locking on loading its stored state. (<a href="https://github.com/eclipse-xtext/xtext/issues/1460">#1460</a>)</p>
 
 <h3 id="fixed-exceptions-for-closed-projects">Fixed: Exceptions for Closed Projects</h3>
 
@@ -206,7 +206,7 @@
 <p>With <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=544852">Bug#544852</a> a theoretical security issue was reported (CVE-2019-10249). While building Xtext artifacts may be downloaded through HTTP instead of HTTPS. To avoid this, all build related resources have been revised and assured that all artifacts participating in the software build are only downloaded with HTTPS.</p>
 
 <ul>
-  <li>p2 mirrors are disabled for builds using Eclipse Tycho. (<a href="https://github.com/eclipse/xtext/issues/1427">#1427</a>)</li>
+  <li>p2 mirrors are disabled for builds using Eclipse Tycho. (<a href="https://github.com/eclipse-xtext/xtext/issues/1427">#1427</a>)</li>
   <li>p2 repository URLs changed from HTTP to HTTPS. (<a href="https://github.com/eclipse/xtext-xtend/issues/759">xtext-xtend#759</a>)</li>
   <li>Maven repository URLs changed from HTTP to HTTPS. (<a href="https://github.com/eclipse/xtext-maven/issues/74">xtext-maven</a>)</li>
 </ul>
@@ -215,10 +215,10 @@
 
 <ul>
   <li>LSP4J has been upgraded to its latest release 0.7.2.</li>
-  <li>The Java Bytecode Manipultation library ASM has been upgraded to version 7.1.0. (<a href="https://github.com/eclipse/xtext/issues/1440">#1440</a>)</li>
+  <li>The Java Bytecode Manipultation library ASM has been upgraded to version 7.1.0. (<a href="https://github.com/eclipse-xtext/xtext/issues/1440">#1440</a>)</li>
   <li>Gradle based projects have been upgraded to use the Gradle Wrapper version 5.4.1.</li>
-  <li>Eclipse Tycho has been upgraded to release 1.4.0. (<a href="https://github.com/eclipse/xtext/issues/1422">#1422</a>)</li>
-  <li>In Gradle builds usages of Spring’s <code>dependency-management-plugin</code> have been upgraded to version 1.0.7.RELEASE. (<a href="https://github.com/eclipse/xtext/issues/1420">#1420</a>)</li>
+  <li>Eclipse Tycho has been upgraded to release 1.4.0. (<a href="https://github.com/eclipse-xtext/xtext/issues/1422">#1422</a>)</li>
+  <li>In Gradle builds usages of Spring’s <code>dependency-management-plugin</code> have been upgraded to version 1.0.7.RELEASE. (<a href="https://github.com/eclipse-xtext/xtext/issues/1420">#1420</a>)</li>
 </ul>
 
 <h2 id="new-features-in-xtend">New Features in Xtend</h2>

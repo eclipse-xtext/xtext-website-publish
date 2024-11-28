@@ -163,7 +163,7 @@
 				    <br/>
 				    <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="relevant-changes">Relevant changes</h2>
 
@@ -233,7 +233,7 @@ This bundle is only meant to be used in the DSL plug-in project, as an “additi
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="relevant-changes">Relevant changes</h2>
 
@@ -308,7 +308,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="relevant-changes">Relevant changes</h2>
 
@@ -327,7 +327,7 @@ Alternatively, you can place the line <code>-Djava-21</code> in your <code>.mvn/
 <h3 id="normalization-of-eols-in-xbase-multi-line-strings">Normalization of EOLs in Xbase multi-line strings</h3>
 
 <p>In Xbase languages (including Xtend), multi-line strings (that is, strings that span several lines, NOT Xtend template expressions) are now normalized concerning end-of-line characters, following the same strategies of <a href="https://docs.oracle.com/en/java/javase/21/text-blocks/index.html#normalization-of-line-terminators">Normalization Of Line Terminators in Java Text Blocks</a>: Windows CR in the DSL textual sources will not be part of the string in the generated Java code, which will only contain Unix LF.<br />
-This change leads to the same Java code generated in Windows and Unix-like systems (see issue https://github.com/eclipse/xtext/issues/2293).</p>
+This change leads to the same Java code generated in Windows and Unix-like systems (see issue https://github.com/eclipse-xtext/xtext/issues/2293).</p>
 
 <p>This DSL string</p>
 
@@ -367,7 +367,7 @@ The Xtend validator has been refactored to also use this validator.</p>
 <p>When using <code>xtext-maven-plugin</code> for Xbase languages, relative paths (instead of absolute paths) are now generated in the <code>._trace</code> files.</p>
 
 <p>The configuration option <code>writeStorageResources</code> has been added to <code>xtext-maven-plugin</code> to write the semantic model, the resource description, and optionally the node model to a ResourceStorage (<code>.bin</code> files).<br />
-See <a href="https://github.com/eclipse/xtext/tree/main/org.eclipse.xtext.maven.plugin/src/test/resources/it/generate/simple-lang-write-storage-resources">this integration test</a> for an example.</p>
+See <a href="https://github.com/eclipse-xtext/xtext/tree/main/org.eclipse.xtext.maven.plugin/src/test/resources/it/generate/simple-lang-write-storage-resources">this integration test</a> for an example.</p>
 
 <p>To single-source the configuration of a language that is built with Maven, the configuration options <code>writeClasspathConfiguration</code> and <code>classpathConfigurationLocation</code> were added to the <code>xtext-maven-plugin</code>. If enabled, a property file will be written that contains the classpath information, model directories, output directories and lookup paths that were used for the plugin execution. The properties file contains file hashes that allow to track changed across subsequent runs.</p>
 
@@ -387,7 +387,7 @@ See <a href="https://github.com/eclipse/xtext/tree/main/org.eclipse.xtext.maven.
 
 <p>The <code>AbstractFormatterTest</code> base class has been added to the <code>org.eclipse.xtext.testing</code> package to provide a convenient way to test the formatter capabilities. The Xtext Domainmodel example project and the Xtend code base have been extended by concrete formatter test cases to demonstrate the usage of this framework class.</p>
 
-<p>The generated <code>InjectorProvider</code> for runtime tests has been improved to make customizations easier w.r.t. OSGI/Maven environments (see <a href="https://github.com/eclipse/xtext/pull/3042">https://github.com/eclipse/xtext/pull/3042</a>).</p>
+<p>The generated <code>InjectorProvider</code> for runtime tests has been improved to make customizations easier w.r.t. OSGI/Maven environments (see <a href="https://github.com/eclipse-xtext/xtext/pull/3042">https://github.com/eclipse-xtext/xtext/pull/3042</a>).</p>
 
 <p>The base class <code>AbstractXtextTests</code>, for “old”-style testing, is now part of <code>org.eclipse.xtext.testing</code>. (See also the removal notice below.)</p>
 
@@ -465,7 +465,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="upgrades">Upgrades</h2>
 
@@ -515,7 +515,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="upgrades">Upgrades</h2>
 
@@ -570,7 +570,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="upgrades">Upgrades</h2>
 
@@ -628,7 +628,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="xtext-monorepo">Xtext Monorepo</h2>
 
@@ -645,7 +645,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 <h2 id="changes--enhancements">Changes / Enhancements</h2>
 
 <ul>
-  <li>Xtext hovers now support disposing browsers on timeout (see https://github.com/eclipse/xtext/issues/2653 and linked platform and jdt issues and pr there)</li>
+  <li>Xtext hovers now support disposing browsers on timeout (see https://github.com/eclipse-xtext/xtext/issues/2653 and linked platform and jdt issues and pr there)</li>
   <li>Our DebugSourceInstallingCompilationParticipant now makes use of JDTs feature to do the bytecode manipulation without extra reading and writing the file.</li>
 </ul>
 
@@ -688,7 +688,7 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="upgrades">Upgrades</h2>
 
@@ -744,10 +744,10 @@ Elie Richa (AdaCore)</p>
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="xtext-and-java-17">Xtext and Java 17</h2>
-<p>Xtext now supports Java 17 as source and target, too. This requires newer Eclipse platform and JDT versions that do no longer run on Java 8. That’s why the Xtext framework and Xtend compiler require Java 11 as minimal Java version from 2.29 onwards. While we were at it we also bumped the minimal tested Eclipse version to 2022-03 (2.28 was still compatible to and tested against Eclipse Oxygen). Please Note: We did no special treatment for newer Java constructs in Xtend, so what works, works, what does not, does not - the latter being most likely intentional. Please engage by filing bugs or pull requests (see also <a href="https://github.com/eclipse/xtext/issues/1982">issue#1982</a>.</p>
+<p>Xtext now supports Java 17 as source and target, too. This requires newer Eclipse platform and JDT versions that do no longer run on Java 8. That’s why the Xtext framework and Xtend compiler require Java 11 as minimal Java version from 2.29 onwards. While we were at it we also bumped the minimal tested Eclipse version to 2022-03 (2.28 was still compatible to and tested against Eclipse Oxygen). Please Note: We did no special treatment for newer Java constructs in Xtend, so what works, works, what does not, does not - the latter being most likely intentional. Please engage by filing bugs or pull requests (see also <a href="https://github.com/eclipse-xtext/xtext/issues/1982">issue#1982</a>.</p>
 
 <h2 id="upgrades">Upgrades</h2>
 
@@ -829,7 +829,7 @@ Elie Richa (AdaCore)</p>
 
 <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
 
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse/xtext/issues/1721">https://github.com/eclipse/xtext/issues/1721</a>.</p>
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
 
 <h2 id="changes-to-orgeclipsextextsdk-feature">Changes to <code>org.eclipse.xtext.sdk</code> feature.</h2>
 

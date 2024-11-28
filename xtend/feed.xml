@@ -6,15 +6,15 @@
 </description>
     <link>https://eclipse.dev/Xtext/xtend/</link>
     <atom:link href="https://eclipse.dev/Xtext/xtend/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Nov 2024 10:30:55 +0000</pubDate>
-    <lastBuildDate>Tue, 19 Nov 2024 10:30:55 +0000</lastBuildDate>
+    <pubDate>Thu, 28 Nov 2024 07:21:21 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Nov 2024 07:21:21 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Xtend 2.37.0 Release Notes</title>
         <description>&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;relevant-changes&quot;&gt;Relevant changes&lt;/h2&gt;
 
@@ -53,7 +53,7 @@
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;relevant-changes&quot;&gt;Relevant changes&lt;/h2&gt;
 
@@ -96,7 +96,7 @@
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;relevant-changes&quot;&gt;Relevant changes&lt;/h2&gt;
 
@@ -150,7 +150,7 @@ Note that this concerns only multi-line strings (that is, strings that span seve
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
 
@@ -189,7 +189,7 @@ Note that this concerns only multi-line strings (that is, strings that span seve
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
 
@@ -228,7 +228,7 @@ Note that this concerns only multi-line strings (that is, strings that span seve
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
 
@@ -271,7 +271,7 @@ Note that this concerns only multi-line strings (that is, strings that span seve
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;xtext-monorepo&quot;&gt;Xtext Monorepo&lt;/h2&gt;
 
@@ -325,7 +325,7 @@ Note that this concerns only multi-line strings (that is, strings that span seve
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;changes--enhancements&quot;&gt;Changes / Enhancements&lt;/h2&gt;
 
@@ -370,7 +370,7 @@ Sebastian Zarnekow (independent)&lt;/p&gt;
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;xtend-and-java-17&quot;&gt;Xtend and Java 17&lt;/h2&gt;
 &lt;p&gt;Xtend now supports Java 17 as source and target, too. This requires newer Eclipse platform and JDT versions that do no longer run on Java 8. That’s why the Xtend 2.29 compiler requires Java 11 as minimal Java version. While we were at it we also bumped the minimal tested Eclipse version to 2022-03 (2.28 was still compatible to and tested against Eclipse Oxygen).&lt;/p&gt;
@@ -420,7 +420,7 @@ suited to write Java instead of Xtend anyways. Xtend is great for code generator
 
 &lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
 
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1721&quot;&gt;https://github.com/eclipse/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;changes--enhancements&quot;&gt;Changes / Enhancements&lt;/h2&gt;
 

@@ -6,9 +6,48 @@
 </description>
     <link>https://eclipse.dev/Xtext/xtend/</link>
     <atom:link href="https://eclipse.dev/Xtext/xtend/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Dec 2024 09:37:10 +0000</pubDate>
-    <lastBuildDate>Fri, 13 Dec 2024 09:37:10 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Feb 2025 09:43:16 +0000</pubDate>
+    <lastBuildDate>Wed, 26 Feb 2025 09:43:16 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Xtend 2.38.0 Release Notes</title>
+        <description>&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
+
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;relevant-changes&quot;&gt;Relevant changes&lt;/h2&gt;
+
+&lt;p&gt;Xtend now requires Java 17 as the minimal Java version and 2024-03 as the minimal target platform.&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;See Xtext release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
+
+&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+milestone%3ARelease_2.38+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Apr+milestone%3ARelease_2.38+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.30&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.30&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.38&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+        <link>https://eclipse.dev/Xtext/xtend/releasenotes/2025/02/26/version-2-38-0.html</link>
+        <guid isPermaLink="true">https://eclipse.dev/Xtext/xtend/releasenotes/2025/02/26/version-2-38-0.html</guid>
+        
+        
+        <category>releasenotes</category>
+        
+      </item>
     
       <item>
         <title>Xtend 2.37.0 Release Notes</title>
@@ -408,52 +447,6 @@ suited to write Java instead of Xtend anyways. Xtend is great for code generator
         <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
         <link>https://eclipse.dev/Xtext/xtend/releasenotes/2022/11/21/version-2-29-0.html</link>
         <guid isPermaLink="true">https://eclipse.dev/Xtext/xtend/releasenotes/2022/11/21/version-2-29-0.html</guid>
-        
-        
-        <category>releasenotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Xtend 2.28.0 Release Notes</title>
-        <description>&lt;p&gt;Xtend 2.28.0 is a maintenance release.&lt;/p&gt;
-
-&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext--xtend&quot;&gt;Call to Action: Secure the future maintenance of Xtext &amp;amp; Xtend&lt;/h2&gt;
-
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext &amp;amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp;amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;changes--enhancements&quot;&gt;Changes / Enhancements&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Xtend Supports M2E 2.x&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-
-&lt;p&gt;The Xtend Language project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release):&lt;/p&gt;
-
-&lt;p&gt;Christian Dietrich (itemis)&lt;br /&gt;
-Hannes Wellmann (IILS mbH) &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
-
-&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?q=is%3Aissue+milestone%3ARelease_2.28+is%3Aclosed+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?q=is%3Apr+milestone%3ARelease_2.28+is%3Aclosed+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.28&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.28&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.28&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
-        <link>https://eclipse.dev/Xtext/xtend/releasenotes/2022/08/29/version-2-28-0.html</link>
-        <guid isPermaLink="true">https://eclipse.dev/Xtext/xtend/releasenotes/2022/08/29/version-2-28-0.html</guid>
         
         
         <category>releasenotes</category>

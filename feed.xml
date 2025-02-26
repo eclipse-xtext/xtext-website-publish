@@ -6,9 +6,92 @@
 </description>
     <link>https://eclipse.dev/Xtext/</link>
     <atom:link href="https://eclipse.dev/Xtext/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Dec 2024 09:37:09 +0000</pubDate>
-    <lastBuildDate>Fri, 13 Dec 2024 09:37:09 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Feb 2025 09:43:14 +0000</pubDate>
+    <lastBuildDate>Wed, 26 Feb 2025 09:43:14 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Xtext 2.38.0 Release Notes</title>
+        <description>&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext&quot;&gt;Call to Action: Secure the future maintenance of Xtext&lt;/h2&gt;
+
+&lt;p&gt;As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;relevant-changes&quot;&gt;Relevant changes&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A new class, &lt;code&gt;TemporaryFolder,&lt;/code&gt; has been added to the bundle &lt;code&gt;org.eclipse.xtext.testing&lt;/code&gt;, meant to replace the class &lt;code&gt;TemporaryFolder&lt;/code&gt;, now deprecated, in &lt;code&gt;org.eclipse.xtext.xbase.testing&lt;/code&gt;. Clients should update to the new class: the deprecated one will be removed in the future.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Our project wizard for Maven/Tycho projects now generates this dependency for the &lt;code&gt;exec-maven-plugin&lt;/code&gt; configuration for running the MWE2 workflow:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.eclipse.xtext&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;org.eclipse.xtext.xtext.generator.dependencies&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${xtextVersion}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;to avoid possible problems with EMF/Platform dependencies (e.g., &lt;code&gt;NoSuchMethodError&lt;/code&gt;) due to misaligned transitive dependencies.&lt;br /&gt;
+This replaces the previously generated dependency &lt;code&gt;xtext-antlr-generator&lt;/code&gt;, which is included in the new dependency.&lt;br /&gt;
+For existing projects, we suggest to perform such a change manually.&lt;br /&gt;
+The &lt;code&gt;org.eclipse.xtext.xtext.generator.dependencies&lt;/code&gt; bundle was introduced in the previous release.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A new method was introduced, &lt;code&gt;IResourcesSetupUtil.waitForJdtIndex&lt;/code&gt;, that blocks until the JDT index finishes its indexing. This is now automatically called from &lt;code&gt;waitForBuild&lt;/code&gt;, &lt;code&gt;cleanBuild&lt;/code&gt; and &lt;code&gt;fullBuild&lt;/code&gt;. This new mechanism removed flaky UI tests from our builds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
+
+&lt;p&gt;Xtext now requires Java 17 as the minimal Java version and 2024-03 as the minimal target platform.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
+
+&lt;h2 id=&quot;deprecations&quot;&gt;Deprecations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The method &lt;code&gt;IResourcesSetupUtil.isAutobuild(boolean)&lt;/code&gt; has been deprecated and will be removed in a future release; its parameter was never used. The new method &lt;code&gt;IResourcesSetupUtil.isAutobuild()&lt;/code&gt; should be used instead.&lt;/li&gt;
+  &lt;li&gt;The class &lt;code&gt;TargetPlatformUtil&lt;/code&gt; and its method &lt;code&gt;setTargetPlatform&lt;/code&gt; have been deprecated: with recent versions of Tycho and PDE, they are not needed anymore.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;removals&quot;&gt;Removals&lt;/h2&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lorenzo Bettini&lt;/li&gt;
+  &lt;li&gt;Christian Dietrich&lt;/li&gt;
+  &lt;li&gt;Sebastian Zarnekow&lt;/li&gt;
+  &lt;li&gt;Mehmet Emin Karaman&lt;/li&gt;
+  &lt;li&gt;Rubén Porras Campo&lt;/li&gt;
+  &lt;li&gt;Martin Jobst&lt;/li&gt;
+  &lt;li&gt;Tommaso Fonda&lt;/li&gt;
+  &lt;li&gt;Ed Merks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
+
+&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+milestone%3ARelease_2.38+is%3Aclosed+repo%3Aeclipse-xtext%2Fxtext&amp;amp;type=issues&amp;amp;ref=searchresults&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Apr+milestone%3ARelease_2.38+is%3Aclosed+repo%3Aeclipse-xtext%2Fxtext&amp;amp;type=pullrequests&amp;amp;ref=searchresults&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.38&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.38&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.38&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+        <link>https://eclipse.dev/Xtext/releasenotes/2025/02/26/version-2-38-0.html</link>
+        <guid isPermaLink="true">https://eclipse.dev/Xtext/releasenotes/2025/02/26/version-2-38-0.html</guid>
+        
+        
+        <category>releasenotes</category>
+        
+      </item>
     
       <item>
         <title>Xtext 2.37.0 Release Notes</title>
@@ -713,69 +796,6 @@ Elie Richa (AdaCore)&lt;/p&gt;
         <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
         <link>https://eclipse.dev/Xtext/releasenotes/2022/11/21/version-2-29-0.html</link>
         <guid isPermaLink="true">https://eclipse.dev/Xtext/releasenotes/2022/11/21/version-2-29-0.html</guid>
-        
-        
-        <category>releasenotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Xtext 2.28.0 Release Notes</title>
-        <description>&lt;p&gt;Xtext 2.28.0 is a maintenance release.&lt;/p&gt;
-
-&lt;h2 id=&quot;call-to-action-secure-the-future-maintenance-of-xtext&quot;&gt;Call to Action: Secure the future maintenance of Xtext&lt;/h2&gt;
-
-&lt;p&gt;As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in &lt;a href=&quot;https://github.com/eclipse-xtext/xtext/issues/1721&quot;&gt;https://github.com/eclipse-xtext/xtext/issues/1721&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;changes-to-orgeclipsextextsdk-feature&quot;&gt;Changes to &lt;code&gt;org.eclipse.xtext.sdk&lt;/code&gt; feature.&lt;/h2&gt;
-
-&lt;p&gt;The &lt;code&gt;org.eclipse.xtext.sdk&lt;/code&gt; does no longer package the deprecated &lt;code&gt;org.eclipse.xtext.generator&lt;/code&gt; bundle. Please migrate to the new workflow/generator. The old and deprecated generator can still be found in the new &lt;code&gt;org.eclipse.xtext.generator&lt;/code&gt; feature.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrades&quot;&gt;Upgrades&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;LSP4J was updated to 0.15.0&lt;/li&gt;
-  &lt;li&gt;GSON was updated to 2.9.0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;changes--enhancements&quot;&gt;Changes / Enhancements&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;LSP Code was optimized and enhanced. We have e.g. done some enhancements to Quickfix API.&lt;/li&gt;
-  &lt;li&gt;Xtext Supports M2E 2.x&lt;/li&gt;
-  &lt;li&gt;Xbase based formatters now can be subclassed in Java more easily.&lt;/li&gt;
-  &lt;li&gt;Better support for needRebuild api in platform.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-
-&lt;p&gt;The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release to &lt;a href=&quot;https://github.com/eclipse/xtext#repositories&quot;&gt;all repositories&lt;/a&gt; except &lt;a href=&quot;https://github.com/eclipse/xtext-xtend&quot;&gt;xtext-xtend&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;Christian Dietrich (itemis)&lt;br /&gt;
-Ruben Porras&lt;br /&gt;
-Karsten Thoms (karakun)&lt;br /&gt;
-Frank Benoit (ETAS)&lt;br /&gt;
-Hannes Wellmann (IILS mbH) &lt;img src=&quot;https://img.shields.io/badge/-first%20time%20contributor-green.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;fixed-issues&quot;&gt;Fixed Issues&lt;/h2&gt;
-
-&lt;p&gt;As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+milestone%3ARelease_2.28+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Fixed GitHub issues&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=is%3Apr+milestone%3ARelease_2.28+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;amp;type=Issues&amp;amp;ref=searchresults&quot;&gt;Closed Pull Requests&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;amp;bug_status=VERIFIED&amp;amp;bug_status=CLOSED&amp;amp;classification=Modeling&amp;amp;classification=Tools&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;amp;f0=OP&amp;amp;f1=OP&amp;amp;f3=CP&amp;amp;f4=CP&amp;amp;known_name=Xtext%202.28&amp;amp;list_id=16618269&amp;amp;product=TMF&amp;amp;product=Xtend&amp;amp;query_based_on=Xtext%202.28&amp;amp;query_format=advanced&amp;amp;status_whiteboard=v2.28&amp;amp;status_whiteboard_type=allwordssubstr&quot;&gt;Fixed Eclipse Bugzilla tickets&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
-        <link>https://eclipse.dev/Xtext/releasenotes/2022/08/29/version-2-28-0.html</link>
-        <guid isPermaLink="true">https://eclipse.dev/Xtext/releasenotes/2022/08/29/version-2-28-0.html</guid>
         
         
         <category>releasenotes</category>

@@ -473,6 +473,19 @@ The second way is to use Eclipse <a href="https://wiki.eclipse.org/Tycho/Target_
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.40.0/">2.40.0</a></td>
+      <td><a href="https://download.eclipse.org/modeling/emf/emf/builds/release/2.43.0">2.43.0</a> (2.36.0)</td>
+      <td><a href="https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.23.0/">2.23.0</a> (2.9.1)</td>
+      <td>no longer supported</td>
+      <td><a href="https://download.eclipse.org/releases/2025-09">4.37.0</a> (4.30)</td>
+      <td><a href="https://download.eclipse.org/releases/2025-09">2025-09</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
       <td><a href="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.39.0/">2.39.0</a></td>
       <td><a href="https://download.eclipse.org/modeling/emf/emf/builds/release/2.42.0">2.42.0</a> (2.36.0)</td>
       <td><a href="https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.22.0/">2.22.0</a> (2.9.1)</td>
@@ -747,7 +760,7 @@ The second way is to use Eclipse <a href="https://wiki.eclipse.org/Tycho/Target_
   </tbody>
 </table>
 
-<p>The following is an example target platform definition for Xtext 2.39.0 and Eclipse 4.36 alias 2025-06.</p>
+<p>The following is an example target platform definition for Xtext 2.40.0 and Eclipse 4.37 alias 2025-09.</p>
 
 <pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
 &lt;?pde version="3.8"?&gt;
@@ -755,7 +768,7 @@ The second way is to use Eclipse <a href="https://wiki.eclipse.org/Tycho/Target_
 &lt;locations&gt;
   &lt;location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="false" type="InstallableUnit"&gt;
     &lt;unit id="org.eclipse.xtext.sdk.feature.group" version="0.0.0"/&gt;
-    &lt;repository location="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.39.0/"/&gt;
+    &lt;repository location="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.40.0/"/&gt;
   &lt;/location&gt;
   &lt;location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="false" type="InstallableUnit"&gt;
     &lt;unit id="org.eclipse.jdt.feature.group" version="0.0.0"/&gt;
@@ -764,7 +777,7 @@ The second way is to use Eclipse <a href="https://wiki.eclipse.org/Tycho/Target_
     &lt;unit id="org.eclipse.draw2d.feature.group" version="0.0.0"/&gt;
     &lt;unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/&gt;
     &lt;unit id="org.eclipse.emf.mwe2.launcher.feature.group" version="0.0.0"/&gt;
-    &lt;repository location="https://download.eclipse.org/releases/2025-06/"/&gt;
+    &lt;repository location="https://download.eclipse.org/releases/2025-09/"/&gt;
   &lt;/location&gt;
 &lt;/locations&gt;
 &lt;/target&gt;

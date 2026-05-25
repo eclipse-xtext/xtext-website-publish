@@ -134,6 +134,8 @@
 					<h3>Table of Contents</h3>
 					<ul>
 						
+							<li><p><a href="#/releasenotes/2026/05/25/version-2-43-0">Xtext 2.43.0 Release Notes &mdash; May 25, 2026</a></p>
+						
 							<li><p><a href="#/releasenotes/2026/02/23/version-2-42-0">Xtext 2.42.0 Release Notes &mdash; Feb 23, 2026</a></p>
 						
 							<li><p><a href="#/releasenotes/2025/11/24/version-2-41-0">Xtext 2.41.0 Release Notes &mdash; Nov 24, 2025</a></p>
@@ -152,10 +154,67 @@
 						
 							<li><p><a href="#/releasenotes/2024/02/27/version-2-34-0">Xtext 2.34.0 Release Notes &mdash; Feb 27, 2024</a></p>
 						
-							<li><p><a href="#/releasenotes/2023/11/21/version-2-33-0">Xtext 2.33.0 Release Notes &mdash; Nov 21, 2023</a></p>
-						
 					</ul>
 				</div>
+				
+				  <hr/>
+				  <section id="/releasenotes/2026/05/25/version-2-43-0">
+				  	<h1>Xtext 2.43.0 Release Notes<small>&nbsp;&nbsp;May 25, 2026</small></h1>
+				    <br/>
+				    <h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
+
+<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
+
+<h2 id="changes">Changes</h2>
+
+<ul>
+  <li>Xtext now supports Java 25</li>
+  <li>Xtext now supports Junit 6</li>
+  <li>Xtext is now on Tycho 5</li>
+</ul>
+
+<h2 id="breaking-changes">Breaking Changes</h2>
+
+<ul>
+  <li>Xtext now requires Java 21 (Java 17 is dropped)</li>
+  <li>Xtext does no longer support Junit 5</li>
+  <li>Xtext now requires Eclipse 2025-12 or later</li>
+</ul>
+
+<h2 id="deprecations">Deprecations</h2>
+
+<p>This will be the last release with GWT support.<br />
+This will be the last release with xtext-web support.</p>
+
+<h2 id="credits">Credits</h2>
+
+<p>The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release).</p>
+
+<ul>
+  <li>Christian Dietrich</li>
+  <li>Hannes Wellmann</li>
+  <li>Jan Rosczak</li>
+  <li>Simeon Andreev</li>
+  <li>Raghunandana</li>
+</ul>
+
+<h2 id="fixed-issues">Fixed Issues</h2>
+
+<p>As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Aissue+milestone%3ARelease_2.43+is%3Aclosed+repo%3Aeclipse-xtext%2Fxtext&amp;type=issues&amp;ref=searchresults">Fixed GitHub issues</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Apr+milestone%3ARelease_2.43+is%3Aclosed+repo%3Aeclipse-xtext%2Fxtext&amp;type=pullrequests&amp;ref=searchresults">Closed Pull Requests</a></p>
+  </li>
+  <li>
+    <p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Modeling&amp;classification=Tools&amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;f0=OP&amp;f1=OP&amp;f3=CP&amp;f4=CP&amp;known_name=Xtext%202.43&amp;list_id=16618269&amp;product=TMF&amp;product=Xtend&amp;query_based_on=Xtext%202.43&amp;query_format=advanced&amp;status_whiteboard=v2.43&amp;status_whiteboard_type=allwordssubstr">Fixed Eclipse Bugzilla tickets</a></p>
+  </li>
+</ul>
+
+				  </section>
 				
 				  <hr/>
 				  <section id="/releasenotes/2026/02/23/version-2-42-0">
@@ -761,61 +820,6 @@ Note that the old base class <code>AbstractXtextTests</code> is now part of <cod
   </li>
   <li>
     <p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Modeling&amp;classification=Tools&amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;f0=OP&amp;f1=OP&amp;f3=CP&amp;f4=CP&amp;known_name=Xtext%202.31&amp;list_id=16618269&amp;product=TMF&amp;product=Xtend&amp;query_based_on=Xtext%202.31&amp;query_format=advanced&amp;status_whiteboard=v2.34&amp;status_whiteboard_type=allwordssubstr">Fixed Eclipse Bugzilla tickets</a></p>
-  </li>
-</ul>
-
-				  </section>
-				
-				  <hr/>
-				  <section id="/releasenotes/2023/11/21/version-2-33-0">
-				  	<h1>Xtext 2.33.0 Release Notes<small>&nbsp;&nbsp;Nov 21, 2023</small></h1>
-				    <br/>
-				    <p>Xtext 2.33.0 is a maintenance release.</p>
-
-<h2 id="call-to-action-secure-the-future-maintenance-of-xtext">Call to Action: Secure the future maintenance of Xtext</h2>
-
-<p>As you might have recognized, the number of people contributing to Xtext on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
-
-<h2 id="upgrades">Upgrades</h2>
-
-<ul>
-  <li>Guava was update to 32.1.3</li>
-  <li>Reload4j was updated to 1.2.25</li>
-  <li>Classgraph was updated to 4.8.164. The bundle id in orbit has changed so you may need to adapt.</li>
-  <li>ASM is now on 9.6</li>
-  <li>MWE(2) is now on 1.10/2.16</li>
-</ul>
-
-<h2 id="removals">Removals</h2>
-<ul>
-  <li>Old Xpand based <code>org.eclipse.xtext.generator</code> and <code>IXtext2EcorePostProcessor</code> have been removed.</li>
-</ul>
-
-<h2 id="credits">Credits</h2>
-
-<p>The Xtext project is thankful for the dedication of each committer and contributor. This release has been made possible by the following persons (in order of the number of contributed commits to this release).</p>
-
-<ul>
-  <li>Christian Dietrich</li>
-  <li>Sebastian Zarnekow</li>
-  <li>Hannes Wellmann</li>
-  <li>Heinrich Weichert</li>
-  <li>Wouter Born</li>
-</ul>
-
-<h2 id="fixed-issues">Fixed Issues</h2>
-
-<p>As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:</p>
-
-<ul>
-  <li>
-    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Aissue+milestone%3ARelease_2.33+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;type=Issues&amp;ref=searchresults">Fixed GitHub issues</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Apr+milestone%3ARelease_2.33+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;type=Issues&amp;ref=searchresults">Closed Pull Requests</a></p>
-  </li>
-  <li>
-    <p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Modeling&amp;classification=Tools&amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;f0=OP&amp;f1=OP&amp;f3=CP&amp;f4=CP&amp;known_name=Xtext%202.31&amp;list_id=16618269&amp;product=TMF&amp;product=Xtend&amp;query_based_on=Xtext%202.31&amp;query_format=advanced&amp;status_whiteboard=v2.33&amp;status_whiteboard_type=allwordssubstr">Fixed Eclipse Bugzilla tickets</a></p>
   </li>
 </ul>
 

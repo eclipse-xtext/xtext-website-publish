@@ -3,7 +3,7 @@
 
   <head>
 	<meta charset="UTF-8">
-	<title>Xtend - Documentation</title>
+	<title>Xtend - Xtend 2.44.0 Release Notes</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
 		content="Xtend is a statically typed programming language sitting on top of Java.">
@@ -115,74 +115,44 @@
   <!-- Navbar End -->
 
 
-    <div class="page-content">
-  <script>
-    function startSearch(event) {
-        if (event.keyCode == 13) {
-            var q = 'site:eclipse.dev/Xtext/xtend/documentation+' + event.target.value;
-            window.open('https://www.google.com/search?q=' + q, "_self");
-        }
-    }
-  </script>
-  <div class="wrapper">
-    <div id="page">  
-      <div class="inner">
-        <div id="maincontainer" class="container">
-          <span class="edit-on-github pull-right">
-            <a href="https://github.com/eclipse/xtext-website/tree/main/xtend-website/documentation/index.md">Edit on Github</a>
-          </span>
-          <div class="span3" style="margin-left: 0px;">
-            <div class="search-bar">
-              <img src="/Xtext/xtend/images/search-gray.png"/>
-              <input type="search" id="google-search" onkeyup="startSearch(event);"/>
-            </div>
-            <ul id="nav-outline">
-	<li>&nbsp;</li>
-	<li style="color : #333;">Getting Started</li>
-	<li><a href="101_gettingstarted.html">Hello World</a></li>
-	<li><a href="102_moviesexample.html">The Movies Example</a></li>
-	<li>&nbsp;</li>
-	<li style="color : #333;">Reference Documentation</li>
-	<li><a href="201_types.html">Java Interoperability</a></li>
-	<li><a href="202_xtend_classes_members.html">Classes and Members</a></li>
-	<li><a href="203_xtend_expressions.html">Expressions</a></li>
-	<li><a href="204_activeannotations.html">Active Annotations</a></li>
-</ul>
-          </div>
-          <div class="span9 doc-contents">
-            <h1 id="introduction">Introduction</h1>
+    <div class="post">
 
-<p>Xtend is a statically-typed programming language which translates to comprehensible Java source code. Syntactically and semantically Xtend has its roots in the Java programming language but improves on many aspects:</p>
+  <header class="post-header">
+    <h1 class="post-title">Xtend 2.44.0 Release Notes</h1>
+    <p class="post-meta">Aug 24, 2026</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="call-to-action-secure-the-future-maintenance-of-xtext--xtend">Call to Action: Secure the future maintenance of Xtext &amp; Xtend</h2>
+
+<p>As you might have recognized, the number of people contributing to Xtext &amp; Xtend on a regular basis has declined over the past years and so has the number of contributions. At the same time the amount of work for basic maintenance has stayed the same or even increased with the new release cadence of Java and the Eclipse simultaneous release. Briefly: The future maintenance of Xtext &amp; especially Xtend is at risk, at least in the current form and as part of the Eclipse Simrel. If you care, please join the discussion in <a href="https://github.com/eclipse-xtext/xtext/issues/1721">https://github.com/eclipse-xtext/xtext/issues/1721</a>.</p>
+
+<h2 id="breaking-changes">Breaking Changes</h2>
+
+<h2 id="credits">Credits</h2>
+
+<p>See Xtext release notes.</p>
+
+<h2 id="fixed-issues">Fixed Issues</h2>
+
+<p>As in every release cycle we were eagerly hunting down bugs, and reviewed and integrated plenty of contributions. For further details please refer to the following lists:</p>
 
 <ul>
-  <li><strong><a href="202_xtend_classes_members.html#extension-methods">Extension methods</a></strong> - enhance closed types with new functionality</li>
-  <li><strong><a href="203_xtend_expressions.html#lambdas">Lambda Expressions</a></strong> - concise syntax for anonymous function literals</li>
-  <li><strong><a href="204_activeannotations.html">ActiveAnnotations</a></strong> - annotation processing on steroids</li>
-  <li><strong><a href="203_xtend_expressions.html#operators">Operator overloading</a></strong> - make your libraries even more expressive</li>
-  <li><strong><a href="203_xtend_expressions.html#switch-expression">Powerful switch expressions</a></strong> - type based switching with implicit casts</li>
-  <li><strong><a href="202_xtend_classes_members.html#polymorphic-dispatch">Multiple dispatch</a></strong> - a.k.a. polymorphic method invocation</li>
-  <li><strong><a href="203_xtend_expressions.html#templates">Template expressions</a></strong> - with intelligent white space handling</li>
-  <li><strong><a href="203_xtend_expressions.html">No statements</a></strong> - everything is an expression</li>
-  <li><strong><a href="203_xtend_expressions.html#property-access">Properties</a></strong> - shorthands for accessing and defining getters and setter</li>
-  <li><strong>Type inference</strong> - you rarely need to write down type signatures anymore</li>
-  <li><strong>Full support for Java generics</strong> - including all conformance and conversion rules</li>
-  <li><strong>Translates to Java</strong> not bytecode - understand what is going on and use your code for platforms such as Android</li>
+  <li>
+    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Aissue+milestone%3ARelease_2.44+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;type=Issues&amp;ref=searchresults">Fixed GitHub issues</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=is%3Apr+milestone%3ARelease_2.44+is%3Aclosed+repo%3Aeclipse%2Fxtext+repo%3Aeclipse%2Fxtext-core+repo%3Aeclipse%2Fxtext-lib+repo%3Aeclipse%2Fxtext-extras+repo%3Aeclipse%2Fxtext-eclipse+repo%3Aeclipse%2Fxtext-idea+repo%3Aeclipse%2Fxtext-web+repo%3Aeclipse%2Fxtext-maven+repo%3Aeclipse%2Fxtext-xtend&amp;type=Issues&amp;ref=searchresults">Closed Pull Requests</a></p>
+  </li>
+  <li>
+    <p><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Modeling&amp;classification=Tools&amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ckeywords&amp;f0=OP&amp;f1=OP&amp;f3=CP&amp;f4=CP&amp;known_name=Xtext%202.30&amp;list_id=16618269&amp;product=TMF&amp;product=Xtend&amp;query_based_on=Xtext%202.30&amp;query_format=advanced&amp;status_whiteboard=v2.44&amp;status_whiteboard_type=allwordssubstr">Fixed Eclipse Bugzilla tickets</a></p>
+  </li>
 </ul>
 
-<p>Unlike other JVM languages Xtend has <a href="201_types.html">zero interoperability issues</a> with Java: Everything you write interacts with Java exactly as expected. At the same time Xtend is much more concise, readable and expressive. Xtend’s small library is just a thin layer that provides useful utilities and extensions on top of the Java Development Kit (JDK).</p>
+  </article>
 
-<p>Of course, you can call Xtend methods from Java, too, in a completely transparent way. Furthermore, Xtend provides a modern Eclipse-based IDE closely integrated with the Eclipse Java Development Tools (JDT), including features like call-hierarchies, rename refactoring, debugging and many more.</p>
-
-<hr />
-
-<p><strong><a href="101_gettingstarted.html">Next Chapter: Hello World</a></strong></p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+
     
     <footer class="site-footer">
   <div id="extra">

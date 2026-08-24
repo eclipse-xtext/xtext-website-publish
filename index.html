@@ -146,14 +146,13 @@
       </h2>
       <p>Eclipse Xtext&#x2122; is a framework for development of programming languages
         and domain-specific languages. With Xtext&#x2122; you define your language using a powerful grammar language. As a result you get a full infrastructure,
-        including <b>parser</b>, <b>linker</b>, <b>typechecker</b>, <b>compiler</b> as well as editing support for <b>Eclipse</b>, <b>any editor that supports the Language Server Protocol</b> and your favorite <b>web browser</b>.
+        including <b>parser</b>, <b>linker</b>, <b>typechecker</b>, <b>compiler</b> as well as editing support for <b>Eclipse</b> and <b>any editor that supports the Language Server Protocol</b>.
         <br/><i><a href="#intro-quotes">Learn more...</a></i></p>
     </div>
   </div>
   <div class="row" style="text-align:center">
     <div>
       <div id="coverflow">
-        <img class="intro-screenshot" style="display:none;" src="/Xtext/images/web_screenshot.png" alt="Xtext in Web Browser">
         <img class="intro-screenshot" src="/Xtext/images/eclipse_screenshot.png" alt="Xtext in Eclipse">
         <img class="intro-screenshot" style="display:none;" src="/Xtext/images/vscode_screenshot.png" alt="Xtext in Visual Studio Code via Language Server Protocol">
       </div>
@@ -199,8 +198,7 @@
         <h4><img src="/Xtext/images/xtext-bullet.png"/>
           Multi Platform</h4>
         <p>
-          Whether you are targeting developers or domain experts, you will be able to provide a dedicated smart editor. Eclipse, any editor that supports the Language Server Protocol and various browser
-          editors are supported. Have a look at our <a href="#platform-comparison">platform comparison chart</a>.
+          Whether you are targeting developers or domain experts, you will be able to provide a dedicated smart editor. Eclipse and any editor that supports the Language Server Protocol. Have a look at our <a href="#platform-comparison">platform comparison chart</a>.
         </p>
       </div>
       <div class="span4">
@@ -317,7 +315,6 @@
         <th></th>
         <th style="width:25%;vertical-align: middle;">LSP</th>
         <th style="width:25%;vertical-align: middle;"><img src="/Xtext/images/logo_eclipse.png" alt="Eclipse" style="width:100%;"></th>
-        <th style="width:25%;vertical-align: middle;"><img src="/Xtext/images/logo_browsers.png" alt="Web Browser" style="width:100%;"></th>
       </tr>
     </thead>
     <tbody>
@@ -326,19 +323,16 @@
         <td>Syntax Coloring</td>
         <td><div class="partly-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Text elements with special meaning in the context of your language can be highlighted with a custom text style, e.g. static fields in Java have an italic font.">
         <td>Semantic Coloring</td>
         <td><div class="not-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="General errors in the text files are marked automatically, e.g. violations of the specified syntax or references to undefined elements. Additionally, Xtext offers a simple API to implement language-specific checks.">
         <td>Error Checking</td>
-        <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
       </tr>
@@ -347,12 +341,10 @@
         <td>Auto-Completion</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Once you have defined rules for handling white space (line breaks, tabs etc.) in your language, you can apply automatic formatting to whole files or parts of them.">
         <td>Formatting</td>
-        <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
       </tr>
@@ -361,12 +353,10 @@
         <td>Hover Information</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="When the cursor is moved to a language element that is referenced from multiple places, all these occurrences are highlighted.">
         <td>Mark Occurrences</td>
-        <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
       </tr>
@@ -375,70 +365,60 @@
         <td>Go To Declaration</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="When you rename a language element, automatically update all references to it.">
         <td>Rename Refactoring</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="If your language interoperates with Java, the source files are considered during debug sessions in your IDE, i.e. you can set breakpoints and step through statements.">
         <td>Debugging</td>
         <td><div class="not-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Disable the selected lines of code by inserting comments into each line, or reenable them by removing such comments.">
         <td>Toggle Comments</td>
         <td><div class="partly-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Display an outline of a file highlighting its structure. This is useful for quick navigation.">
         <td>Outline / Structure View</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Automatic fixes can be proposed for problems that have been found by the error checker.">
         <td>Quick Fix Proposals</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Generate a list of all references to the selected language element.">
         <td>Find References</td>
         <td><div class="supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="If your language interoperates with Java, a tree view of all directly and indirectly called methods can be generated for the selected method.">
         <td>Call Hierarchy</td>
         <td><div class="not-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="If your language interoperates with Java, a tree view of all directly and indirectly inherited classes and interfaces can be generated for the selected type.">
         <td>Type Hierarchy</td>
         <td><div class="not-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
       <tr class="has-popover"
       	data-content="Collapse parts of a file that are not important for your current task.">
         <td>Folding</td>
         <td><div class="not-supported"></div></td>
         <td><div class="supported"></div></td>
-        <td><div class="not-supported"></div></td>
       </tr>
     </tbody>
   </table>
